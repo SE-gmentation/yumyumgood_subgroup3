@@ -109,7 +109,8 @@ public class WriteReview extends AppCompatActivity {
                     showErrorDialog() ;
                 if (like + dislike < 3)
                     showSelectLike();
-                else showDialog() ;
+                if (input.length() > 5 && like + dislike > 2)
+                    showDialog() ;
                 //InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                 //imm.hideSoftInputFromWindow(write_review.getWindowToken(),0);
 
