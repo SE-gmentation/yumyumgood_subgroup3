@@ -29,6 +29,8 @@ public class WriteReview extends AppCompatActivity {
     ImageButton btnLike3;
     ImageButton btnDislike3;
 
+    int like = 0;
+    int dislike = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,7 @@ public class WriteReview extends AppCompatActivity {
             public void onClick(View view) {
                 btnLike1.setSelected(true);
                 btnDislike1.setSelected(false);
+                like ++;
             }
         });
 
@@ -59,6 +62,7 @@ public class WriteReview extends AppCompatActivity {
             public void onClick(View view) {
                 btnLike1.setSelected(false);
                 btnDislike1.setSelected(true);
+                dislike ++;
             }
         });
         btnLike2.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +70,7 @@ public class WriteReview extends AppCompatActivity {
             public void onClick(View view) {
                 btnLike2.setSelected(true);
                 btnDislike2.setSelected(false);
+                like ++;
             }
         });
 
@@ -74,6 +79,7 @@ public class WriteReview extends AppCompatActivity {
             public void onClick(View view) {
                 btnLike2.setSelected(false);
                 btnDislike2.setSelected(true);
+                dislike ++;
             }
         });
         btnLike3.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +87,7 @@ public class WriteReview extends AppCompatActivity {
             public void onClick(View view) {
                 btnLike3.setSelected(true);
                 btnDislike3.setSelected(false);
+                like ++;
             }
         });
 
@@ -89,10 +96,9 @@ public class WriteReview extends AppCompatActivity {
             public void onClick(View view) {
                 btnLike3.setSelected(false);
                 btnDislike3.setSelected(true);
+                dislike ++;
             }
         });
-
-
 
 
         submit_button.setOnClickListener(new View.OnClickListener(){
@@ -101,9 +107,12 @@ public class WriteReview extends AppCompatActivity {
                 String input = write_review.getText().toString();
                 if (input.length() < 6)
                     showErrorDialog() ;
+                if (like + dislike < 3)
+                    showSelectLike();
                 else showDialog() ;
                 //InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                 //imm.hideSoftInputFromWindow(write_review.getWindowToken(),0);
+
             }
         });
 
@@ -152,7 +161,21 @@ public class WriteReview extends AppCompatActivity {
         AlertDialog.Builder msgBuilder = new AlertDialog.Builder(WriteReview.this)
                 .setTitle("")
                 .setMessage("최소 5글자 이상 작성해 주세요.")
-                .setNegativeButton("다시 작성하기", new DialogInterface.OnClickListener() {
+                .setNegativeButton("확인", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+        AlertDialog msgErrDlg = msgBuilder.create();
+        msgErrDlg.show();
+    }
+
+    void showSelectLike() {
+        AlertDialog.Builder msgBuilder = new AlertDialog.Builder(WriteReview.this)
+                .setTitle("")
+                .setMessage("모든 메뉴의 추천 여부를 선택하여 주세요.")
+                .setNegativeButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
