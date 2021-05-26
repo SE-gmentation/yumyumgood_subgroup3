@@ -1,6 +1,7 @@
 package com.example.yumyumgoodapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,7 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -95,10 +98,12 @@ public class WriteReview extends AppCompatActivity {
         submit_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(write_review.getWindowToken(),0);
+                showDialog() ;
+                //InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                //imm.hideSoftInputFromWindow(write_review.getWindowToken(),0);
             }
         });
+
 
         write_review.addTextChangedListener(new TextWatcher() {
             @Override
@@ -119,4 +124,25 @@ public class WriteReview extends AppCompatActivity {
         });
     }
 
+
+    void showDialog() {
+        AlertDialog.Builder msgBuilder = new AlertDialog.Builder(WriteReview.this)
+                .setTitle("리뷰를 제출 하시겠습니까?")
+                .setMessage("소중한 의견 감사합니다.")
+                .setPositiveButton("제출", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(WriteReview.this, "리뷰가 성공적으로 제출되었습니다.", Toast.LENGTH_LONG).show();
+                        finish();
+                    }
+                })
+                .setNegativeButton("취소", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        
+                    }
+                });
+        AlertDialog msgDlg = msgBuilder.create();
+        msgDlg.show();
+    }
 }

@@ -61,7 +61,7 @@
             android:textSize="16dp"
             android:textStyle="bold"
             android:layout_marginBottom="5dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:text="주문 메뉴" />
 
         <LinearLayout
@@ -180,14 +180,14 @@
             android:textColor="#000000"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="5dp"
             android:text="리뷰 작성" />
 
         <EditText
             android:id="@+id/writer"
             android:layout_width="335dp"
-            android:layout_height="190dp"
+            android:layout_height="180dp"
             android:background="@drawable/review_border"
             android:maxLength="300"
             android:gravity="top"
