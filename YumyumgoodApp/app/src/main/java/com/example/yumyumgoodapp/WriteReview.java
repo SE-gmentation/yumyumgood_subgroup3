@@ -98,7 +98,10 @@ public class WriteReview extends AppCompatActivity {
         submit_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                showDialog() ;
+                String input = write_review.getText().toString();
+                if (input.length() < 6)
+                    showErrorDialog() ;
+                else showDialog() ;
                 //InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                 //imm.hideSoftInputFromWindow(write_review.getWindowToken(),0);
             }
@@ -127,8 +130,7 @@ public class WriteReview extends AppCompatActivity {
 
     void showDialog() {
         AlertDialog.Builder msgBuilder = new AlertDialog.Builder(WriteReview.this)
-                .setTitle("리뷰를 제출 하시겠습니까?")
-                .setMessage("소중한 의견 감사합니다.")
+                .setMessage("리뷰를 제출 하시겠습니까?                                소중한 의견 감사합니다.")
                 .setPositiveButton("제출", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -139,10 +141,24 @@ public class WriteReview extends AppCompatActivity {
                 .setNegativeButton("취소", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        
+
                     }
                 });
         AlertDialog msgDlg = msgBuilder.create();
         msgDlg.show();
+    }
+
+    void showErrorDialog() {
+        AlertDialog.Builder msgBuilder = new AlertDialog.Builder(WriteReview.this)
+                .setTitle("")
+                .setMessage("최소 5글자 이상 작성해 주세요.")
+                .setNegativeButton("다시 작성하기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+        AlertDialog msgErrDlg = msgBuilder.create();
+        msgErrDlg.show();
     }
 }
