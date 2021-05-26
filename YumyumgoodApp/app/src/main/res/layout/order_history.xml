@@ -53,7 +53,7 @@
                         android:id="@+id/top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="32dp"
+                        android:layout_marginLeft="38dp"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -85,7 +85,7 @@
                         app:layout_constraintTop_toBottomOf="@id/top"
                         app:layout_constraintLeft_toLeftOf="parent"
                         android:layout_marginTop="25dp"
-                        android:layout_marginLeft="32dp"
+                        android:layout_marginLeft="38dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -117,22 +117,25 @@
                             android:id="@+id/btnWriteReview"
                             android:text="리뷰 작성"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnDetailHistory"
                             android:text="주문 상세"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnViewBuilding"
                             android:text="식당 보기"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                     </LinearLayout>
 
@@ -221,22 +224,25 @@
                             android:id="@+id/btnWriteReview2"
                             android:text="리뷰 작성"
                             android:background="#D4D8DC"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnDetailHistory2"
                             android:text="주문 상세"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnViewBuilding2"
                             android:text="식당 보기"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                     </LinearLayout>
 
@@ -340,22 +346,25 @@
                             android:id="@+id/btnWriteReview3"
                             android:text="리뷰 작성"
                             android:background="#D4D8DC"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnDetailHistory3"
                             android:text="주문 상세"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnViewBuilding3"
                             android:text="식당 보기"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                     </LinearLayout>
 
@@ -459,22 +468,25 @@
                             android:id="@+id/btnWriteReview4"
                             android:text="리뷰 작성"
                             android:background="#D4D8DC"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnDetailHistory4"
                             android:text="주문 상세"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                         <Button
                             android:id="@+id/btnViewBuilding4"
                             android:text="식당 보기"
                             android:background="#97C7ED"
-                            android:layout_margin="5dp"
-                            android:layout_width="100dp"
+                            android:layout_width="90dp"
+                            android:textSize="13dp"
                             android:layout_height="40dp"/>
                     </LinearLayout>
 
