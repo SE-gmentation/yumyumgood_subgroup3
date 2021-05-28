@@ -56,6 +56,11 @@ class OrderHistory : AppCompatActivity() {
         else
             btnWriteReview4.isEnabled = true
 
+        btnViewBuilding.setOnClickListener{
+            val intent = Intent(this, ViewBuilding::class.java)
+            startActivity(intent)
+        }
+
         btnWriteReview2.setOnClickListener {
             Toast.makeText(this@OrderHistory, "주문 후 3일 이내만 리뷰를 작성할 수 있습니다.", Toast.LENGTH_LONG).show()
         }
