@@ -101,23 +101,22 @@ public class WriteReview extends AppCompatActivity {
         });
 
 
+        /**Domain Model 의 Concept : 리뷰 당위성 확인*/
         submit_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 String input = write_review.getText().toString();
-                if (input.length() < 6)
+                if (input.length() < 6)                         /**case 2. 최소 5자 이상 작성하지 않았을 시 dialog 안내*/
                     showErrorDialog() ;
-                if (like + dislike < 3)
+                if (like + dislike < 3)                         /**case 1. 추천 여부 미선택 시 dialog 안내*/
                     showSelectLike();
-                if (input.length() > 5 && like + dislike > 2)
+                if (input.length() > 5 && like + dislike > 2)   /**모두 만족하였을 경우 당위성 테스트 통과 -> 리뷰 제출 가능*/
                     showDialog() ;
-                //InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-                //imm.hideSoftInputFromWindow(write_review.getWindowToken(),0);
-
             }
         });
 
 
+        /** 리뷰 당위성 확인 컨셉이 사용하는 글자수 체크 함수*/
         write_review.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

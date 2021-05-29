@@ -28,6 +28,9 @@ class OrderHistory : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        /**Domain Model 의 Concept : 카운터, 리뷰 작성 가능 여부 확인을 위해 경과일 체크*/
+
         if (passDays1 > 3){
             msg_pass.text = "리뷰 작성 가능 기간이 지났습니다."
             btnWriteReview.isEnabled = false
