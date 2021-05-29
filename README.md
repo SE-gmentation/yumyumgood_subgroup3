@@ -2,7 +2,7 @@
 > subgroup3 식당 이용자 리뷰 작성 및 리뷰 평점 계산 기능 
 </br>
 
-### 기능 설명
+## 기능 설명
 ![logo (1)](https://user-images.githubusercontent.com/69567269/120076519-dbeece00-c0e0-11eb-8517-0f244a3ecdc1.png)       
 **주문 내역 뷰** : 식당 이용자의 주문 내역을 시간 순으로 정렬하여 보여준다. 주문 내역은 학식당, 주문한 메뉴, 결제 금액, 경과일을 포함한다.     
 각 내역 별 3개의 버튼, 1.리뷰 작성 2.주문 상세 3.식당 보기 가 존재한다. 리뷰 작성 버튼은 *Domain Model 의 concept "카운터"* 가 작용한다.      
@@ -18,4 +18,12 @@
 **식당 보기 뷰** : 식당 이용자는 다른 이용자들이 해당 학식당에 남긴 리뷰들과 그로부터 계산된 총점을 한눈에 확인할 수 있다. 리뷰 평점 계산은 ~~~~~ 주연이 파트 ~~~~~      
 ![식당보기](https://user-images.githubusercontent.com/69567269/120077647-60901b00-c0e6-11eb-8e7e-cced2aadcfa3.png)    
 
-### 실행 방식 
+## 실행 방식 
+* [Fork, Clone, or Download on GitHub](https://github.com/SE-gmentation/yumyumgood_subgroup3)
+
+## 구성원 & 역할 
+|**Name**|**Role**|  
+|---|------|
+|박지수 [jisoo-o](https://github.com/jisoo-o/)|리뷰 작성 기능 안드로이드 앱 구현|
+|이주연 [2JooYeon](https://github.com/2JooYeon)|리뷰 평점 계산 data mining 구현|
+
