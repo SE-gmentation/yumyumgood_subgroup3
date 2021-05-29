@@ -1,4 +1,5 @@
-# yumyumgood_subgroup3
+<h1 align="center">yumyumgood_subgroup3</h1>
+
 > subgroup3 식당 이용자 리뷰 작성 및 리뷰 평점 계산 기능 
 </br>
 
