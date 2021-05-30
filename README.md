@@ -33,6 +33,9 @@
    ```
 
 3. Open with Android studio and run AVD emulator
+<br/>
+
+*리뷰 평점 계산 ~~~~ 방법*
 
 <br/>
 
@@ -72,6 +75,6 @@
 
 ## 💻 참고사항
 - 코드작업은 각 subgroup 별 organization 내에서 각자 작업 했습니다. 
-- 
+- 추후 안드로이드 앱 식당보기 뷰에서 리뷰평점계산 알고리즘의 결과값을 확인할수있도록 구현 옞정 ~ 
 
 
