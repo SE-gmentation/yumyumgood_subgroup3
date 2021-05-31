@@ -1,11 +1,16 @@
 ## 📢 SubGroup 3
 
-- 서브그룹 주제 소개 
-  - Subgroup3 박지수[jisoo-o](https://github.com/jisoo-o/), 이주연[2JooYeon](https://github.com/2JooYeon) 입니다. Subgroup3 주제는 식당 이용자의 리뷰 관련 기능입니다. 
-  - 식당 이용자는 주문 내역을 열람하고 리뷰를 작성할 수 있고, 작성된 리뷰들은 data mining을 이용하여 평점 계산이 이루어집니다. 
+- 주제 소개 
+  - 식당 이용자의 리뷰 관련 기능 주제를 맡은 SUBGROUP3 박지수[jisoo-o](https://github.com/jisoo-o/)/이주연[2JooYeon](https://github.com/2JooYeon) 입니다. 
+  - 총 5가지의 USE-CASE 중 UC-2, UC-4의 기능을 구현하였고, UC-3, UC-5는 부분적으로 구현하였습니다. 
+  - UC-2 : 학식 건물 별 평점 확인
+  - UC-4 : 리뷰 작성
+  - (UC-3 : 리뷰 확인, UC-5 : 주문 내역 )
+
+
 - 개발한 기능 
   - 식당 이용자의 주문 내역 열람, 리뷰 작성 기능 구현
-  - 리뷰 평점 계산 기능 구현
+  - data mining을 이용한 리뷰 평점 계산 기능 구현
 
 <br/>
 
@@ -19,7 +24,7 @@
 
 ## 🔎 Getting Started
 
-*Android App 실행 방법*
+- Android App 실행 방법
 1. Clone this repository
 
    ```bash
@@ -35,7 +40,7 @@
 3. Open with Android studio and run AVD emulator
 <br/>
 
-*리뷰 평점 계산 ~~~~ 방법*
+- 리뷰 평점 계산 ~~~~ 방법
 
 <br/>
 
@@ -74,7 +79,7 @@
 <br/>
 
 ## 💻 참고사항
-- 코드작업은 각 subgroup 별 organization 내에서 각자 작업 했습니다. 
+- 코드 작업 위치 : yumyumgood_subgroup3 respository
 - 추후 안드로이드 앱 식당보기 뷰에서 리뷰평점계산 알고리즘의 결과값을 확인할수있도록 구현 옞정 ~ 
 
 
